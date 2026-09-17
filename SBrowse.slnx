@@ -1,0 +1,5 @@
+<Solution>
+    <Folder Name="/src/">
+        <Project Path="src/SBrowse.Shared/SBrowse.Shared.csproj" />
+    </Folder>
+</Solution>
