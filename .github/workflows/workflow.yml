@@ -26,7 +26,7 @@ jobs:
       - name: Test
         run: |
           mkdir -p ./TestResults
-          find tests/ -type f -name "*UnitTests.dll" -path "*/bin/Release/*" | while read -r test_dll; do
+          find tests/ -type f -name "*Tests.dll" -path "*/bin/Release/*" | while read -r test_dll; do
             echo "Running tests in: $test_dll"
             dotnet exec "$test_dll"
           done
