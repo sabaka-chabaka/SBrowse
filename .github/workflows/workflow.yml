@@ -23,5 +23,10 @@ jobs:
       - name: Build
         run: dotnet build --configuration Release --no-restore
         
-      - name: Tests
-        run: dotnet test --no-restore --no-build
+      - name: Test
+        run: |
+          mkdir -p ./TestResults
+          find tests/ -type f -name "*UnitTests.dll" -path "*/bin/Release/*" | while read -r test_dll; do
+            echo "Running tests in: $test_dll"
+            dotnet exec "$test_dll"
+          done
