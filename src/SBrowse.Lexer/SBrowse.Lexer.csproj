@@ -4,33 +4,6 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <IsPackable>false</IsPackable>
   </PropertyGroup>
-
-  <PropertyGroup>
-    <TestingPlatform_EnableDotNetTestInfrastructure>true</TestingPlatform_EnableDotNetTestInfrastructure>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Testing.Extensions.TrxReport" Version="1.5.3" />
-    <PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage" Version="17.14.2" />
-  </ItemGroup>
-  
-  <ItemGroup>
-  <PackageReference Include="coverlet.collector" Version="10.0.0">
-    <PrivateAssets>all</PrivateAssets>
-    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-  </PackageReference>
-  <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.4.0" />
-  <PackageReference Include="xunit.runner.visualstudio" Version="4.0.0-pre.4">
-    <PrivateAssets>all</PrivateAssets>
-    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-  </PackageReference>
-  <PackageReference Include="xunit.v3" Version="4.0.0-pre.128" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Using Include="Xunit"/>
-  </ItemGroup>
 
 </Project>
