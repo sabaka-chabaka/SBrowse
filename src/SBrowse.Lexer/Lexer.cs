@@ -2,6 +2,7 @@ using System.Text;
 using SBrowse.Lexer.Interfaces;
 using SBrowse.Lexer.LexerResults;
 using SBrowse.Lexer.Tokens;
+using SBrowse.Shared;
 
 namespace SBrowse.Lexer;
 

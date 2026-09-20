@@ -1,4 +1,4 @@
-using SBrowse.Lexer.Tokens;
+using SBrowse.Shared;
 
 namespace SBrowse.Lexer.LexerResults;
 
